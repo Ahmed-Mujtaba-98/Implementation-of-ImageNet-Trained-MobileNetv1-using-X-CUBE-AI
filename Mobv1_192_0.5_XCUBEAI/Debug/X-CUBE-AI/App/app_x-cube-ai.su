@@ -1,0 +1,13 @@
+app_x-cube-ai.c:112:26:ai_mnetwork_handle	0	static
+app_x-cube-ai.c:102:9:ai_mnetwork_is_valid.isra.0.constprop	8	static
+app_x-cube-ai.c:56:6:MX_X_CUBE_AI_Init	8	static
+app_x-cube-ai.c:64:6:MX_X_CUBE_AI_Process	8	static
+app_x-cube-ai.c:135:13:ai_mnetwork_find	8	static
+app_x-cube-ai.c:152:10:ai_mnetwork_create	24	static
+app_x-cube-ai.c:194:11:ai_mnetwork_destroy	16	static
+app_x-cube-ai.c:209:9:ai_mnetwork_get_report	8	static
+app_x-cube-ai.c:220:10:ai_mnetwork_get_error	8	static
+app_x-cube-ai.c:235:9:ai_mnetwork_init	72	static
+app_x-cube-ai.c:252:8:ai_mnetwork_run	16	static
+app_x-cube-ai.c:264:8:ai_mnetwork_forward	8	static
+app_x-cube-ai.c:275:6:ai_mnetwork_get_private_handle	16	static

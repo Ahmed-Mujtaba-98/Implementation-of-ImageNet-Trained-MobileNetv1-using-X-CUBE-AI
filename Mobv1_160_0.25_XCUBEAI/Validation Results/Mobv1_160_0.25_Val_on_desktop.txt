@@ -1,0 +1,93 @@
+
+Starting AI validation on desktop with random data...
+  
+C:/Users/ahmed/STM32Cube/Repository/Packs/STMicroelectronics/X-CUBE-AI/7.1.0/Utilities/windows/stm32ai validate --name network -m C:/Users/ahmed/Desktop/STM/Paper_02/CMSIS/workspace_ide/Mobv1_160_0.25_XCUBEAI/mobilenet_v1_0.25_160_quant.tflite --type tflite --compression 8 --verbosity 1 --workspace C:\Users\ahmed\AppData\Local\Temp\mxAI_workspace184644950560170018779336840415968 --output C:\Users\ahmed\.stm32cubemx\network_output  
+Neural Network Tools for STM32AI v1.6.0 (STM.ai v7.1.0-RC3) 
+WARNING: no weight was compressed. 
+WARNING: Using compression with 1|4|8 is deprecated use  none|lossless|low|medium|high instead 
+Creating user workspace: C:\Users\ahmed\AppData\Local\Temp\mxAI_workspace184644950560170018779336840415968\inspector_network\workspace 
+Setting validation data... 
+ generating random data, size=10, seed=42, range=default 
+ I[1]: (10, 160, 160, 3)/uint8, min/max=[0, 255], mean/std=[127.546, 73.569], scale=0.00781250 zp=128, input 
+ No output/reference samples are provided 
+Running the STM AI c-model (AI RUNNER)...(name=network, mode=x86) 
+ X86 shared lib (C:\Users\ahmed\AppData\Local\Temp\mxAI_workspace184644950560170018779336840415968\inspector_network\workspace\lib\libai_network.dll) ['network'] 
+ Summary "network" - ['network'] 
+ -------------------------------------------------------------------------------- 
+ inputs/outputs       : 1/1 
+ input_1              : (1,160,160,3), uint8, 76800 bytes, scale=0.007812, zp=128, user 
+ output_1             : (1,1,1,1001), uint8, 1001 bytes, scale=0.003906, zp=0, user 
+ n_nodes              : 31 
+ compile_datetime     : Sep 12 2022 23:55:41 (Mon Sep 12 23:55:39 2022) 
+ activations          : 104384 
+ weights              : 478804 
+ macc                 : 21088612 
+ -------------------------------------------------------------------------------- 
+ runtime              : STM.AI 7.1.0 (Tools 7.1.0) 
+ capabilities         : ['IO_ONLY', 'PER_LAYER', 'PER_LAYER_WITH_DATA'] 
+ device               : AMD64 Intel64 Family 6 Model 165 Stepping 5, GenuineIntel (Windows) 
+ -------------------------------------------------------------------------------- 
+ Results for 10 inference(s) - average per inference 
+  device              : AMD64 Intel64 Family 6 Model 165 Stepping 5, GenuineIntel (Windows) 
+  duration            : 50.748ms 
+  c_nodes             : 31 
+ c_id  m_id  desc                output                                    ms          % 
+ ------------------------------------------------------------------------------------------------ 
+ 0     0     Conv2D (0x103)      (1,80,80,8)/uint8/51200B/q[0.023528,0]         3.958    7.8% 
+ 1     1     Conv2D (0x103)      (1,80,80,8)/uint8/51200B/q[0.023528,0]         2.233    4.4% 
+ 2     2     Conv2D (0x103)      (1,80,80,16)/uint8/102400B/q[0.023528,0]       2.094    4.1% 
+ 3     3     Conv2D (0x103)      (1,40,40,16)/uint8/25600B/q[0.023528,0]        1.164    2.3% 
+ 4     4     Conv2D (0x103)      (1,40,40,32)/uint8/51200B/q[0.023528,0]        1.817    3.6% 
+ 5     5     Conv2D (0x103)      (1,40,40,32)/uint8/51200B/q[0.023528,0]        2.218    4.4% 
+ 6     6     Conv2D (0x103)      (1,40,40,32)/uint8/51200B/q[0.023528,0]        3.500    6.9% 
+ 7     7     Conv2D (0x103)      (1,20,20,32)/uint8/12800B/q[0.023528,0]        0.524    1.0% 
+ 8     8     Conv2D (0x103)      (1,20,20,64)/uint8/25600B/q[0.023528,0]        1.565    3.1% 
+ 9     9     Conv2D (0x103)      (1,20,20,64)/uint8/25600B/q[0.023528,0]        1.097    2.2% 
+ 10    10    Conv2D (0x103)      (1,20,20,64)/uint8/25600B/q[0.023528,0]        3.103    6.1% 
+ 11    11    Conv2D (0x103)      (1,10,10,64)/uint8/6400B/q[0.023528,0]         0.261    0.5% 
+ 12    12    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       1.528    3.0% 
+ 13    13    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       0.533    1.1% 
+ 14    14    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       2.998    5.9% 
+ 15    15    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       0.509    1.0% 
+ 16    16    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       2.968    5.8% 
+ 17    17    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       0.532    1.0% 
+ 18    18    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       3.102    6.1% 
+ 19    19    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       0.546    1.1% 
+ 20    20    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       2.984    5.9% 
+ 21    21    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       0.525    1.0% 
+ 22    22    Conv2D (0x103)      (1,10,10,128)/uint8/12800B/q[0.023528,0]       2.999    5.9% 
+ 23    23    Conv2D (0x103)      (1,5,5,128)/uint8/3200B/q[0.023528,0]          0.126    0.2% 
+ 24    24    Conv2D (0x103)      (1,5,5,256)/uint8/6400B/q[0.023528,0]          1.587    3.1% 
+ 25    25    Conv2D (0x103)      (1,5,5,256)/uint8/6400B/q[0.023528,0]          0.248    0.5% 
+ 26    27    Conv2dPool (0x109)  (1,1,1,256)/uint8/256B/q[0.023528,0]           4.485    8.8% 
+ 27    28    Conv2D (0x103)      (1,1,1,1001)/uint8/1001B/q[0.135087,95]        1.500    3.0% 
+ 28    28    NL (0x107)          (1,1,1,1001)/float32/4004B                     0.002    0.0% 
+ 29    30    NL (0x107)          (1,1,1,1001)/float32/4004B                     0.037    0.1% 
+ 30    30    NL (0x107)          (1,1,1,1001)/uint8/1001B/q[0.003906,0]         0.003    0.0% 
+ ------------------------------------------------------------------------------------------------ 
+                                                                               50.748 ms 
+ NOTE: duration and exec time per layer is just an indication. They are dependent of the HOST-machine work-load. 
+Running the TFlite model... 
+Saving validation data... 
+ output directory: C:\Users\ahmed\.stm32cubemx\network_output 
+ creating C:\Users\ahmed\.stm32cubemx\network_output\network_val_io.npz 
+ m_outputs_1: (10, 1, 1, 1001)/uint8, min/max=[0, 69], mean/std=[0.218, 2.429], nl_30_0_conversion 
+ c_outputs_1: (10, 1, 1, 1001)/uint8, min/max=[0, 76], mean/std=[0.219, 2.439], scale=0.00390625 zp=0, nl_30_0_conversion 
+Computing the metrics... 
+ Cross accuracy report #1 (reference vs C-model) 
+ ---------------------------------------------------------------------------------------------------- 
+ notes: - r/uint8 data are dequantized with s=0.003906 zp=0 
+        - p/uint8 data are dequantized with s=0.003906 zp=0 
+        - ACC metric is not computed ("--classifier" option can be used to force it) 
+        - the output of the reference model is used as ground truth/reference value 
+        - 10 samples (1001 items per sample) 
+  acc=n.a., rmse=0.000735626, mae=0.000058145, l2r=0.076908328 
+Evaluation report (summary) 
+---------------------------------------------------------------------------------------------------------------------------------------------- 
+Output       acc    rmse          mae           l2r           mean           std           tensor                                             
+---------------------------------------------------------------------------------------------------------------------------------------------- 
+X-cross #1   n.a.   0.000735626   0.000058145   0.076908328   -0.000001171   0.000735662   nl_30_0_conversion, ai_u8, (1,1,1,1001), m_id=[30] 
+---------------------------------------------------------------------------------------------------------------------------------------------- 
+Creating txt report file C:\Users\ahmed\.stm32cubemx\network_output\network_validate_report.txt 
+elapsed time (validate): 7.741s 
+Validation ended

@@ -1,0 +1,4 @@
+cnn_data.c:42114:11:ai_cnn_data_activations_buffer_get	16	static
+cnn_data.c:42132:11:ai_cnn_data_weights_buffer_get	16	static
+cnn_data.c:42150:11:ai_cnn_data_weights_get	0	static
+cnn_data.c:42169:9:ai_cnn_data_params_get	32	static

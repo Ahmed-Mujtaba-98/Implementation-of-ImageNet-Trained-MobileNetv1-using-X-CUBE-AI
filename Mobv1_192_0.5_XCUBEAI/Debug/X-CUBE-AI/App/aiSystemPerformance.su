@@ -1,0 +1,14 @@
+aiTestUtility.h:150:20:_mon_alloc_reset	8	static
+aiTestUtility.h:296:22:dwtIpInit	0	static
+aiTestUtility.h:388:26:cyclesCounterEnd	16	static
+aiSystemPerformance.c:140:12:aiBootstrap	24	static
+aiSystemPerformance.c:186:12:aiInit	24	static
+aiSystemPerformance.c:217:13:aiDeInit	8	static
+aiSystemPerformance.c:256:15:user_observer_cb	32	static
+aiSystemPerformance.c:280:6:aiObserverInit	88	static
+aiSystemPerformance.c:319:6:aiObserverDone	168	static
+aiSystemPerformance.c:399:12:aiTestPerformance	160	static,ignoring_inline_asm
+aiSystemPerformance.c:598:12:aiTestConsole	16	static
+aiSystemPerformance.c:632:5:aiSystemPerformanceInit	32	static
+aiSystemPerformance.c:650:5:aiSystemPerformanceProcess	16	static,ignoring_inline_asm
+aiSystemPerformance.c:727:6:aiSystemPerformanceDeInit	8	static
